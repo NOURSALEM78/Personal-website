@@ -27,7 +27,7 @@
     --popover-foreground: 20 14.3% 4.1%;
     --muted: 60 4.8% 95.9%;
     --muted-foreground: 25 5.3% 44.7%;
-    --accent: 60 4.8% 95.9%;
+    --accent: 60 4.8% 70.1%;
     --accent-foreground: 24 9.8% 10%;
   }
   .dark {
@@ -54,7 +54,7 @@
     --popover-foreground: 20 14.3% 4.1%;
     --muted: 60 4.8% 95.9%;
     --muted-foreground: 25 5.3% 44.7%;
-    --accent: 60 4.8% 95.9%;
+    --accent: 60 4.8% 70.1%;
     --accent-foreground: 24 9.8% 10%;
   }
 }

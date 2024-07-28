@@ -24,34 +24,45 @@ const links = [
       }
 
 ]
+let isSheetOpen = false;
 </script>
 
-<div class=" w-[100vw] bg-secondary 
-    text-secondary-foreground py-8 px-4">
+<div class=" w-[100dvw] bg-secondary 
+    text-secondary-foreground py-4 px-4">
   <nav 
-    class="max-w-screen-2xl flex justify-between items-center mx-auto"
->
+    class="max-w-screen-2xl flex justify-between items-center mx-auto">
     <div class="flex gap-2 items-center">
-        <div class="bg-primary w-5 h-5 me-2"/> 
+        <div class="header__logo-img-cont size-10 flex justify-center" >
+          <img 
+            sizes=""
+            src="favicon.png"
+            alt="Nour salem"
+            class="header__logo-img"
+          />
+        </div>
         <div class="flex items-end gap-2">
         <span class="font-bold text-3xl"> Nour salem </span>
-        <span class="text-1xl uppercase"> / student </span>
+        <span class="text-1xl uppercase"> / DS student </span>
+        
     </div>
   </div>
 
-<div class="uppercase hidden md:flex">
+      <!--Large Screen-->
+      <div class="uppercase hidden md:flex">
       {#each links  as link }
         <Button
         class=" {$page.url.pathname == '/' && 'text-primary'}"
       href={link.herf}
       variant="link">{link.text}</Button>
       { /each}
-      <button class=" justify-center-center"><Themeswitch/></button>
+      <Themeswitch/>
       </div>
 
-      <Sheet.Root>
-        <Sheet.Trigger>
-          <Button class="flex md:hidden" variant="ghost" size="icon">
+        <!--Small Screen-->
+      <Sheet.Root bind:open={isSheetOpen}>
+        <Sheet.Trigger class="flex md:hidden">
+          
+          <Button  variant="ghost" size="icon">
             <svg class="w-10 h-auto"
             xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 24 24"><g 
@@ -70,12 +81,15 @@ const links = [
           </Button>
         </Sheet.Trigger>
         <Sheet.Content class="flex flex-col">
-          <Button size="icon" class="flex flex"><Themeswitch/></Button>
+          <Themeswitch/>
           {#each links  as link }
           <Button
           class=" text-2xl {$page.url.pathname == '/' && 'text-primary'}"
         href={link.herf}
-        variant="link">{link.text}</Button>
+        variant="link" on:click={() => isSheetOpen = false}
+            >
+          {link.text}
+          </Button>
         { /each}
         </Sheet.Content>
       </Sheet.Root>
