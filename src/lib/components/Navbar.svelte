@@ -32,13 +32,8 @@ let isSheetOpen = false;
   <nav 
     class="max-w-screen-2xl flex justify-between items-center mx-auto">
     <div class="flex gap-2 items-center">
-        <div class="header__logo-img-cont size-10 flex justify-center" >
-          <img 
-            sizes=""
-            src="favicon.png"
-            alt="Nour salem"
-            class="header__logo-img"
-          />
+        <div class="header__logo-img-cont flex items-center" >
+          <img src="/sticker2.webp" alt="Nour salem" class="h-10 w-10"/>
         </div>
         <div class="flex items-end gap-2">
         <span class="font-bold text-3xl"> Nour salem </span>
