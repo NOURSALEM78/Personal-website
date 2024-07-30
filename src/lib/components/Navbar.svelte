@@ -27,20 +27,20 @@ const links = [
 let isSheetOpen = false;
 </script>
 
-<div class=" w-[100dvw] bg-secondary 
+<header class=" w-[100dvw] bg-secondary 
     text-secondary-foreground py-4 px-4">
   <nav 
     class="max-w-screen-2xl flex justify-between items-center mx-auto">
-    <div class="flex gap-2 items-center">
+    <a href=" /" class="flex gap-2 items-center">
         <div class="header__logo-img-cont flex items-center" >
           <img src="/sticker2.webp" alt="Nour salem" class="h-10 w-10"/>
         </div>
         <div class="flex items-end gap-2">
         <span class="font-bold text-3xl"> Nour salem </span>
-        <span class="text-1xl uppercase"> / DS student </span>
+        <span class="text-1xl uppercase hidden sm:flex"> / DS student </span>
         
     </div>
-  </div>
+  </a>
 
       <!--Large Screen-->
       <div class="uppercase hidden md:flex">
@@ -90,6 +90,6 @@ let isSheetOpen = false;
       </Sheet.Root>
   
 </nav>
-</div>
+</header>
 
 
