@@ -7,13 +7,13 @@
 </title>
 
 <div class="flex justify-end pb-[35rem] lg:pb-0">
-    <div class="bg-secondary drark: w-full md:w-[60vw] min-h-[40vh] lg:min-h-[calc(100vh-9.5rem)] relative
-flex justify-center pb-20">
+    <div class="bg-secondary relative w-full lg:w-[60vw] min-h-[40vh]
+    lg:min-h-[calc(100vh-9.5rem)]  flex justify-center items-center pb-32">
         <div
         class="bg-[#e8e3e1] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.6)] w-[22rem] absolute  
         lg:start-10 lg:-translate-x-full  flex flex-col items-center 
-        justify-between pt-4 gap-3 dark:text-secondary-foreground 
-        translate-y-[90%] lg:translate-y-1/4 max-w-[85vw]">
+        justify-between pt-8 gap-2 dark:text-secondary-foreground 
+        translate-y-[105%] lg:translate-y-[10%] max-w-[85vw]">
         
         <img
         src="/sticker.webp" 
