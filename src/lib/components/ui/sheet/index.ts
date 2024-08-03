@@ -48,7 +48,7 @@ export const sheetVariants = tv({
 		},
 	},
 	defaultVariants: {
-		side: "right",
+		side: "left",
 	},
 });
 
