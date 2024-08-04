@@ -4,7 +4,7 @@ import { Footer } from "./ui/sheet";
 import SocialMedia from "$lib/components/SocialMedia.svelte"
 
 </script> 
-<footer class=" w-[100dvw] md:h-14 bg-secondary text-secondary-foreground md:py-1 py-4 px-10 ">
+<footer class=" w-[100dvw] md:h-14 bg-secondary text-secondary-foreground md:py-2 py-4 px-14 ">
     <div class="max-w-screen-2xl flex flex-row-reverse md:flex-row justify-between items-center mx-auto ">
     <span class="self-end md:self-center">
     © {(new Date()).getFullYear()} 

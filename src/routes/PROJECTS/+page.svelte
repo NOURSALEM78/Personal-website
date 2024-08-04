@@ -1,7 +1,11 @@
 <script>
-    import Themeswitch from "$lib/components/Themeswitch.svelte";
-import Button from "$lib/components/ui/button/button.svelte";
+    import Title from "$lib/components/title.svelte";
+    import Container from "$lib/components/Container.svelte";
 </script>
 <title>
     Projects
 </title>
+
+<Container>
+<Title title="مشاريعي"></Title>
+</Container>

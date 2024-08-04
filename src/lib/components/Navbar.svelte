@@ -34,17 +34,17 @@ let isSheetOpen = false;
           <img src="/sticker2.webp" alt="Nour salem" class="h-10 w-10"/>
         </div>
         <div class="flex items-end gap-2">
-        <span class="font-bold text-3xl"> نور بنت سالم </span>
-        <span class="text-1xl uppercase hidden sm:flex"> / طالبة علم بيانات </span>
+        <span class="font-bold text-4xl"> نور بنت سالم </span>
+        <span class="text-2xl uppercase hidden sm:flex"> / طالبة علم بيانات </span>
         
     </div>
   </a>
 
       <!--Large Screen-->
-      <div class="uppercase hidden md:flex">
+      <div class="text-1xl uppercase hidden md:flex ">
       {#each links  as link }
         <Button
-        class=" {$page.url.pathname == '/' && 'text-primary'}"
+        class=" text-1xl {$page.url.pathname == '/' && 'text-primary'}"
       href={link.herf}
       variant="link">{link.text}</Button>
       { /each}
@@ -71,7 +71,7 @@ let isSheetOpen = false;
           <Themeswitch/>
           {#each links  as link }
           <Button
-          class=" text-2xl {$page.url.pathname == '/' && 'text-primary'}"
+          class=" text-xl {$page.url.pathname == '/' && 'text-primary'}"
         href={link.herf}
         variant="link" on:click={() => isSheetOpen = false}
             >
