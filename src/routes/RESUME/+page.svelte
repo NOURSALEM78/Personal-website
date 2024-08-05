@@ -61,7 +61,7 @@ import ResumeCard2 from "$lib/components/ResumeCard2.svelte";
             <ul class="list-decimal ps-4">
             <li> منظم  </li>
             <li>مشرف تنظيم</li>
-            <li>تصميم عروض وبوسترات </li>
+            <li>مصمم عروض وبوسترات </li>
             </ul>
             </ResumeCard2>
             
