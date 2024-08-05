@@ -2,6 +2,7 @@
     import Container from "$lib/components/Container.svelte";
 import ResumeCard from "$lib/components/ResumeCard.svelte";
 import Title from "$lib/components/title.svelte";
+import ResumeCard2 from "$lib/components/ResumeCard2.svelte";
 </script>
 <title>
     السيرة الذاتية
@@ -53,15 +54,26 @@ import Title from "$lib/components/title.svelte";
             SvelteKit ومكتبة TailwindCSS وتغطي الدورة طريقة استضافة الموقع على رابط يمكن مشاركته 
         </p>
         </ResumeCard>
-
         <div class="pt-8 flex flex-col gap-10">
             <spsn class="font-bold text-3xl dark:text-secondary">الخبرات والمهارات</spsn>
-            <ResumeCard
-            date=""
-            title="لا يوجد خبرات"
-            company="">
-
-            </ResumeCard>
+            <ResumeCard2
+            title="الخبرات">
+            <ul class="list-decimal ps-4">
+            <li> منظم  </li>
+            <li>مشرف تنظيم</li>
+            <li>تصميم عروض وبوسترات </li>
+            </ul>
+            </ResumeCard2>
+            
+            <ResumeCard2 title="المهارات">
+            <ul class="list-decimal ps-4">
+            <li>اجادة استخدام كانفا</li>
+            <li>التفكير الابداعي والابتكار</li> 
+            <li>العمل الجماعي</li>
+            <li>سرعة التعلم</li>
+            <li>سرعة التعلم </li>          
+            </ul>
+            </ResumeCard2>
             <div/>
         </div>
     </div>

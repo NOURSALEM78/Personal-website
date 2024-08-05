@@ -13,8 +13,7 @@
 <ProjectsCard 
 imageSrc="/img1.jpg"
 title=" جالسة تنطبخ "
-subtitle="انتظروها ترا رهيبه 😉">
+subtitle="">
 </ProjectsCard>
-
 
 </Container>
