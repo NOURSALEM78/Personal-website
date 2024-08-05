@@ -6,28 +6,42 @@ import Title from "$lib/components/title.svelte";
 <title>
     السيرة الذاتية
 </title>
-<Container>
+<Container class="">
         <Title title="السيرة الذاتية" ></Title>
     <div class="pt-16 flex flex-col gap-10">
         <div class="flex justify-between items-center">
-            <spsn class="font-bold text-3xl"> التعليم والدورات</spsn>
+            <spsn class="font-bold text-3xl dark:text-secondary"> التعليم والدورات</spsn>
         <!--<Button>تحميل السيرة الذاتية</Button>-->
         </div>
         <ResumeCard 
         date="2023 - Present" 
         title="علم بيانات" 
         company="جامعة أم القرى">
+        <p>
+            تخصص يدرس كيفية تتحول البيانات العملاقة
+            إلى فرص ذهبية تساعد في صنع القرارات الحاسمة التي تؤثر 
+            على مستقبل الشركات والمجتمعات، ويعلم الطلاب كيفية استخدام الأدوات 
+            الإحصائية والبرمجية لاكتشاف الأنماط والتنبؤ بالاتجاهات.
+        </p>
         </ResumeCard>
         <ResumeCard 
         date="2018 - (july 1 to 19)"
         title="Cryptology and Information Scurity"
         company="Mawhiba"
         >
-            <p>برنامج حضوري تأسيسي في تشفير البيانات وحمايتها،</p>
-            <p> تضمن عدة مهارات اساسية منها:  </p>
-            <p>١-  القيادة والتأثير الاجتماعي<p/>
-            <p>٢- التفكير الابداعي والابتكار</p>
-            <p>٣- قيم المواطنة والاعتزاز بالشخصية الوطنية<p/>
+        <p>برنامج حضوري تأسيسي في تشفير البيانات وحمايتها, تضمن عدة مهارات اساسية منها:</p>
+
+        <ul class="list-decimal ps-4">
+        <li>
+        القيادة والتأثير الاجتماعي
+        </li>
+        <li>
+        التفكير الابداعي والابتكار
+        </li>
+        <li>
+        قيم المواطنة والاعتزاز بالشخصية الوطنية
+        </li>
+        </ul>
         </ResumeCard>
 
         <ResumeCard
@@ -40,8 +54,8 @@ import Title from "$lib/components/title.svelte";
         </p>
         </ResumeCard>
 
-        <div class="pt-16 flex flex-col gap-10">
-            <spsn class="font-bold text-2xl">الخبرات</spsn>
+        <div class="pt-8 flex flex-col gap-10">
+            <spsn class="font-bold text-3xl dark:text-secondary">الخبرات والمهارات</spsn>
             <ResumeCard
             date=""
             title="لا يوجد خبرات"
